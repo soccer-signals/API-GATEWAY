@@ -1,7 +1,9 @@
 
 var app = require('express')();
 var http = require('http').createServer(app);
-var io = require('socket.io')(http);const bodyParser = require('body-parser').listen(3200);
+var io = require('socket.io').listen(3200);
+
+(http);const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 import axios from "axios"
