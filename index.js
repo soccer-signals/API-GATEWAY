@@ -1,7 +1,7 @@
 
 var app = require('express')();
 var http = require('http').createServer(app);
-var io = require('socket.io').listen(3200);
+var io = require('socket.io').listen(3100);
 
 (http);const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
